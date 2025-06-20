@@ -1,6 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
-import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './home';
 import About from './about';
@@ -10,14 +9,13 @@ import Uses from './uses';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/rubens-portfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/uses" element={<Uses />} />
-        <Route path="/contact" element={<Contact/>} />
-
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

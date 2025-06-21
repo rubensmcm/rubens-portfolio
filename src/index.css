@@ -747,7 +747,7 @@ header {
 /* --- CONTACT SECTION --- */
 .contact-section {
   padding: 10px 20px;
-  background-color: var(--accent1-color);
+  background-color: var(--thirdary-color);
   text-align: left;
 }
 
@@ -916,7 +916,7 @@ footer {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  border: none;
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
 }
 
@@ -963,8 +963,6 @@ text-decoration: none;
   }
 }
 }
-
-
 
 /* About Hero */
 .about-hero .hero-content {

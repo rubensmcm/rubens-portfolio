@@ -17,72 +17,35 @@ const Home = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="hero-content">
-            <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
+            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
               Hello!
             </motion.h1>
 
-            <motion.h3
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              I'm <span className="highlight">Sunscript</span>
+            <motion.h3 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.5 }}>
+              I'm <span className="highlight">Rubens Marcolino</span>
             </motion.h3>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            >
-              I’m a software engineer with a passion for turning creative ideas into smart,<br />
-              user-friendly digital experiences. I blend technical skill with an eye for design,<br />
-              building websites and apps and systems that don’t just function—they delight.
+            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
+              I'm a software engineer blending logic and creativity to build user-friendly digital experiences.<br />
+              With a background in acoustical engineering and full-stack development,<br />
+              I craft solutions that are both functional and inspiring.
             </motion.p>
 
-            <motion.div
-              className="hero-buttons"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9 }}
-            >
+            <motion.div className="hero-buttons" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}>
               <a href="#projects" className="btn-primary">View Projects</a>
-              <a href="resume.pdf" className="btn-secondary" download>Download Resume</a>
+              <a href="/assets/resume.pdf" className="btn-secondary" download>Download Resume</a>
             </motion.div>
 
-            <motion.div
-              className="social-icons"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.1 }}
-            >
-              <a href="https://instagram.com" aria-label="Instagram">
-                <img src="/images/instagram.png" alt="Instagram" />
-              </a>
-              <a href="https://facebook.com" aria-label="Facebook">
-                <img src="/images/facebook.png" alt="Facebook" />
-              </a>
-              <a href="https://twitter.com" aria-label="Twitter">
-                <img src="/images/twitter.png" alt="Twitter" />
-              </a>
-              <a href="https://pinterest.com" aria-label="Pinterest">
-                <img src="/images/pinterest.png" alt="Pinterest" />
-              </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn">
-                <img src="/images/linkedin.png" alt="LinkedIn" />
-              </a>
+            <motion.div className="social-icons" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }}>
+<a href="https://instagram.com" aria-label="Instagram"><img src={`${process.env.PUBLIC_URL}/images/instagram.png`} alt="Instagram" /></a>
+  <a href="https://facebook.com" aria-label="Facebook"><img src={`${process.env.PUBLIC_URL}/images/facebook.png`} alt="Facebook" /></a>
+  <a href="https://twitter.com" aria-label="Twitter"><img src={`${process.env.PUBLIC_URL}/images/twitter.png`} alt="Twitter" /></a>
+  <a href="https://pinterest.com" aria-label="Pinterest"><img src={`${process.env.PUBLIC_URL}/images/pinterest.png`} alt="Pinterest" /></a>
+  <a href="https://linkedin.com" aria-label="LinkedIn"><img src={`${process.env.PUBLIC_URL}/images/linkedin.png`} alt="LinkedIn" /></a>
             </motion.div>
           </div>
 
-          <motion.div
-            className="sun-shape"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div className="sun-shape" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8 }}>
             <div className="sun-core"></div>
           </motion.div>
         </motion.div>
@@ -106,21 +69,21 @@ const Home = () => {
             </motion.h2>
 
             <div className="skills-icons">
-            <div className="skills-row">
-                <img src="/images/figma.svg" alt="Figma" />
-                <img src="/images/ps.svg" alt="Photoshop" />
-                <img src="/images/python.svg" alt="Python" />
-                <img src="/images/html.svg" alt="HTML" />
-                <img src="/images/c_plus.png" alt="C++" />
-              </div>
-              <div className="skills-row-2">
-                <img src="/images/jsx.svg" alt="JSX" />
-                <img src="/images/php.svg" alt="PHP" />
-                <img src="/images/css.svg" alt="CSS" />
-                <img src="public/images/react.svg" alt="React" />
-                <img src="/images/vue.svg" alt="Vue" />
-              </div>
-            </div>
+  <div className="skills-row">
+    <img src={`${process.env.PUBLIC_URL}/images/figma.svg`} alt="Figma" />
+    <img src={`${process.env.PUBLIC_URL}/images/ps.svg`} alt="Photoshop" />
+    <img src={`${process.env.PUBLIC_URL}/images/python.svg`} alt="Python" />
+    <img src={`${process.env.PUBLIC_URL}/images/html.svg`} alt="HTML" />
+    <img src={`${process.env.PUBLIC_URL}/images/c_plus.png`} alt="C++" />
+  </div>
+  <div className="skills-row-2">
+    <img src={`${process.env.PUBLIC_URL}/images/jsx.svg`} alt="JSX" />
+    <img src={`${process.env.PUBLIC_URL}/images/php.svg`} alt="PHP" />
+    <img src={`${process.env.PUBLIC_URL}/images/css.svg`} alt="CSS" />
+    <img src={`${process.env.PUBLIC_URL}/images/react.svg`} alt="React" />
+    <img src={`${process.env.PUBLIC_URL}/images/vue.svg`} alt="Vue" />
+  </div>
+</div>
           </div>
 
           <motion.div
@@ -143,44 +106,43 @@ const Home = () => {
         <section id="projects" className="projects-section">
           <h2>Take A Look At My Recent Projects</h2>
           <div className="project-grid">
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Become Solid Project Preview">
-                <img src="/images/example.png" alt="" />
-              </div>
-              <h3>Become Solid</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Solare Skateball Project Preview">
-                <img src="/images/example2.png" alt="" />
-              </div>
-              <h3>Solare Skateball</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Devos Outdoors Project Preview">
-                <img src="/images/example3.png" alt=""/>
-              </div>
-              <h3>Devos Outdoors</h3>
-            </div>
-
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Odr This Project Preview">
-                <img src="/images/example4.png" alt=""/>
-              </div>
-              <h3>Odr This</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Tide Ocean Project Preview">
-                <img src="/images/example5.webp" alt="" />
-              </div>
-              <h3>Tide Ocean</h3>
-            </div>
-            <div className="project-card">
-              <div className="project-image" role="img" aria-label="Barbell Apparel Project Preview">
-                <img src="/images/example6.png" alt="" />
-              </div>
-              <h3>Barbell Apparel</h3>
-            </div>
-          </div>
+  <div className="project-card">
+    <div className="project-image" role="img" aria-label="Become Solid Project Preview">
+      <img src={`${process.env.PUBLIC_URL}/images/example.png`} alt="" />
+    </div>
+    <h3>Become Solid</h3>
+  </div>
+  <div className="project-card">
+    <div className="project-image" role="img" aria-label="Solare Skateball Project Preview">
+      <img src={`${process.env.PUBLIC_URL}/images/example2.png`} alt="" />
+    </div>
+    <h3>Solare Skateball</h3>
+  </div>
+  <div className="project-card">
+    <div className="project-image" role="img" aria-label="Devos Outdoors Project Preview">
+      <img src={`${process.env.PUBLIC_URL}/images/example3.png`} alt="" />
+    </div>
+    <h3>Devos Outdoors</h3>
+  </div>
+  <div className="project-card">
+    <div className="project-image" role="img" aria-label="Odr This Project Preview">
+      <img src={`${process.env.PUBLIC_URL}/images/example4.png`} alt="" />
+    </div>
+    <h3>Odr This</h3>
+  </div>
+  <div className="project-card">
+    <div className="project-image" role="img" aria-label="Tide Ocean Project Preview">
+      <img src={`${process.env.PUBLIC_URL}/images/example5.webp`} alt="" />
+    </div>
+    <h3>Tide Ocean</h3>
+  </div>
+  <div className="project-card">
+    <div className="project-image" role="img" aria-label="Barbell Apparel Project Preview">
+      <img src={`${process.env.PUBLIC_URL}/images/example6.png`} alt="" />
+    </div>
+    <h3>Barbell Apparel</h3>
+  </div>
+</div>
           <a href="#projects" className="btn-primary">View All Works</a>
         </section>
 
@@ -196,15 +158,15 @@ const Home = () => {
               <div className="service-item"><span className="category">DEVELOPMENT</span><br /><span className="title">APP DEVELOPMENT</span></div>
             </div>
             <div className="services-visual">
-              <div className="tile large">
-                <img src="/images/gallery-1.jpg" alt="Gallery"/> </div>
-              <div className="tile small top">
-                <img src="/images/gallery-2.jpg" alt="Gallery"/> </div>
-              <div className="tile small bottom">
-                <img src="/images/gallery-3.jpg" alt="Gallery"/> </div>
-              <div className="tile medium">
-                <img src="/images/gallery-4.jpg" alt="Gallery"/> </div>
-            </div>
+           <div className="tile large">
+            <img src={`${process.env.PUBLIC_URL}/images/gallery-1.jpg`} alt="Gallery" /> </div>
+            <div className="tile small top">
+           <img src={`${process.env.PUBLIC_URL}/images/gallery-2.jpg`} alt="Gallery" /> </div>
+           <div className="tile small bottom">
+           <img src={`${process.env.PUBLIC_URL}/images/gallery-3.jpg`} alt="Gallery" /> </div>
+           <div className="tile medium">
+           <img src={`${process.env.PUBLIC_URL}/images/gallery-4.jpg`} alt="Gallery" /> </div>
+           </div>
           </div>
         </section>
 
@@ -213,7 +175,7 @@ const Home = () => {
           <div className="about-inner">
             <div className="about-left">
               <h2>About Me</h2>
-              <img src="/images/sun-shape-2.png" alt="Sun Graphic" className="about-img" />
+              <img src={`${process.env.PUBLIC_URL}/images/sun-shape-2.png`} alt="Sun Graphic" className="about-img" />
             </div>
             <div className="about-right">
               <p>
@@ -226,48 +188,48 @@ const Home = () => {
         </section>
 
         <section id="expertise" className="expertise-section">
-          <div className="container">
-            <div className="expertise-wrapper">
-              <div className="expertise-left">
-                <h2><span>What</span> I Do Best?</h2>
-              </div>
-              <div className="expertise-right">
-                <div className="expertise-featured">
-                  <img src="/images/icon-branding.png" alt="Icon" />
-                  <div className="expertise-text">
-                    <h3>Branding And Identity Development</h3>
-                    <p>
-                      It is a long established fact that a reader will be distracted by the readable content
-                      of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                      a more-or-less normal distribution of letters.
-                    </p>
-                  </div>
-                </div>
-                <div className="expertise-item">
-                  <img src="/images/icon-app.png" alt="App Design Icon" />
-                  <h4>App Design & Development</h4>
-                </div>
-                <div className="expertise-item">
-                  <img src="/images/icon-web.png" alt="Web Icon" />
-                  <h4>Web And Digital Experience Design</h4>
-                </div>
-                <div className="expertise-item">
-                  <img src="/images/icon-styleguide.png" alt="Style Guide Icon" />
-                  <h4>Visual Style Guide</h4>
-                </div>
-                <div className="expertise-item">
-                  <img src="/images/icon-social.png" alt="Social Media Icon" />
-                  <h4>Social Media Management</h4>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="container">
+  <div className="expertise-wrapper">
+    <div className="expertise-left">
+      <h2><span>What</span> I Do Best?</h2>
+    </div>
+    <div className="expertise-right">
+      <div className="expertise-featured">
+        <img src={`${process.env.PUBLIC_URL}/images/icon-branding.png`} alt="Icon" />
+        <div className="expertise-text">
+          <h3>Branding And Identity Development</h3>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+            a more-or-less normal distribution of letters.
+          </p>
+        </div>
+      </div>
+      <div className="expertise-item">
+        <img src={`${process.env.PUBLIC_URL}/images/icon-app.png`} alt="App Design Icon" />
+        <h4>App Design & Development</h4>
+      </div>
+      <div className="expertise-item">
+        <img src={`${process.env.PUBLIC_URL}/images/icon-web.png`} alt="Web Icon" />
+        <h4>Web And Digital Experience Design</h4>
+      </div>
+      <div className="expertise-item">
+        <img src={`${process.env.PUBLIC_URL}/images/icon-styleguide.png`} alt="Style Guide Icon" />
+        <h4>Visual Style Guide</h4>
+      </div>
+      <div className="expertise-item">
+        <img src={`${process.env.PUBLIC_URL}/images/icon-social.png`} alt="Social Media Icon" />
+        <h4>Social Media Management</h4>
+      </div>
+    </div>
+  </div>
+</div>
         </section>
 
         {/* Contact Section */}
         <section id="contact" className="contact-section">
           <h2>Let's Work Together</h2>
-          <p className="contact-email">sunscript@mail.com</p>
+          <p className="contact-email">rubensmc4@gmail.com</p>
           <a href="contact.html" className="btn-secondary">Get Started</a>
         </section>
 

@@ -1,14 +1,15 @@
 // src/Footer.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
         <div className="footer-left">
-          <h3>SUNSCRIPT</h3>
+          <h3>Rubens Marcolino</h3>
           <p>
-            Denis Potter Mayes, elementum at iaculis elit neque, vel eros dui dolorput, erat vulputate pulvinar, erat erat facilisis. Quam accumsan felis.
+          Software engineering student with a technical background in mechanics and a passion for creative, purposeful development. I design and build clean, user-focused web experiences.
           </p>
           <div className="newsletter">
             <h4>Our Newsletter</h4>
@@ -18,18 +19,18 @@ const Footer = () => {
         <div className="footer-center">
           <h3 className="useful-links">Useful Links</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages.html">Pages</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/uses">Uses</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
         <div className="footer-right">
           <h3>Contact Info</h3>
-          <p>Phone: +1 000 000 0000</p>
-          <p>Email: sunscript@gmail.com</p>
-          <p>Address: Salt Lake City, UT</p>
+          <p>Phone: +1 (385) 233-164</p>
+          <p>Email: rubensmc4@gmail.com</p>
+          <p>Address: Highland, UT</p>
           <div className="social-icons">
             <a href="https://facebook.com"><img src="images/fb_end.png" alt="Facebook" /></a>
             <a href="https://linkedin.com"><img src="images/in_end.png" alt="LinkedIn" /></a>
@@ -39,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       <section className="footer-bottom">
-        <p>© 2025 Designed by Sunscript.</p>
+        <p>© 2025 Designed by Rubens Marcolino.</p>
         <div className="payment-icons">
           <img src="images/visa.svg" alt="Visa" />
           <img src="images/mastercard.svg" alt="Mastercard" />

@@ -163,10 +163,10 @@ const Home = () => {
             </div>
 
             <div className="project-card">
-              <div className="project-image" role="img" aria-label="Odr Shis Project Preview">
+              <div className="project-image" role="img" aria-label="Odr This Project Preview">
                 <img src="/images/example4.png" alt=""/>
               </div>
-              <h3>Odr Shis</h3>
+              <h3>Odr This</h3>
             </div>
             <div className="project-card">
               <div className="project-image" role="img" aria-label="Tide Ocean Project Preview">

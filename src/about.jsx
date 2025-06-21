@@ -30,7 +30,7 @@ const Projects = () => {
     <section class="about-section deeper-about">
       <div class="about-inner">
         <div class="about-left">
-          <img src="images/about-me.jpeg" alt="Sunscript" class="about-img" />
+          <img src="images/about-me.jpeg" alt="Myself" class="about-img" />
         </div>
         <div class="about-right">
           <h2>Who I Am</h2>

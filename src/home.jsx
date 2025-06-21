@@ -106,7 +106,7 @@ const Home = () => {
             </motion.h2>
 
             <div className="skills-icons">
-              <div className="skills-row">
+            <div className="skills-row">
                 <img src="/images/figma.svg" alt="Figma" />
                 <img src="/images/ps.svg" alt="Photoshop" />
                 <img src="/images/python.svg" alt="Python" />
@@ -114,9 +114,9 @@ const Home = () => {
                 <img src="/images/c_plus.png" alt="C++" />
               </div>
               <div className="skills-row-2">
-                <img src="/images/jsx.svg" alt="JSX" />
-                <img src="/images/php.svg" alt="PHP" />
-                <img src="/images/css.svg" alt="CSS" />
+                <img src="./images/jsx.svg" alt="JSX" />
+                <img src="./images/php.svg" alt="PHP" />
+                <img src="./images/css.svg" alt="CSS" />
                 <img src="/images/react.svg" alt="React" />
                 <img src="/images/vue.svg" alt="Vue" />
               </div>

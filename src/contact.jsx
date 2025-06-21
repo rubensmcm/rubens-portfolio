@@ -34,15 +34,15 @@ const Contact = () => {
             <h2>We're here to collaborate with you</h2>
             <div className="employees-gallery">
               <figure>
-                <img src="images/smiling1.jpeg" alt="Creative Developer" />
+                <img src="./images/smiling1.jpeg" alt="Creative Developer" />
                 <figcaption>Fast & Friendly Support</figcaption>
               </figure>
               <figure>
-                <img src="images/smiling2.jpeg" alt="Design Team" />
+                <img src="./images/smiling2.jpeg" alt="Design Team" />
                 <figcaption>Design That Connects</figcaption>
               </figure>
               <figure>
-                <img src="images/smiling3.jpeg" alt="Project Manager" />
+                <img src="./images/smiling3.jpeg" alt="Project Manager" />
                 <figcaption>Focused Project Delivery</figcaption>
               </figure>
             </div>

@@ -32,22 +32,22 @@ const Footer = () => {
           <p>Email: rubensmc4@gmail.com</p>
           <p>Address: Highland, UT</p>
           <div className="social-icons">
-            <a href="https://facebook.com"><img src="images/fb_end.png" alt="Facebook" /></a>
-            <a href="https://linkedin.com"><img src="images/in_end.png" alt="LinkedIn" /></a>
-            <a href="https://x.com"><img src="images/tw_end.png" alt="Twitter" /></a>
-            <a href="https://youtube.com"><img src="images/yt_end.png" alt="YouTube" /></a>
+          <a href="https://facebook.com"><img src={`${process.env.PUBLIC_URL}/images/fb_end.png`} alt="Facebook" /></a>
+          <a href="https://linkedin.com"><img src={`${process.env.PUBLIC_URL}/images/in_end.png`} alt="LinkedIn" /></a>
+          <a href="https://x.com"><img src={`${process.env.PUBLIC_URL}/images/tw_end.png`} alt="Twitter" /></a>
+          <a href="https://youtube.com"><img src={`${process.env.PUBLIC_URL}/images/yt_end.png`} alt="YouTube" /></a>
           </div>
         </div>
       </div>
       <section className="footer-bottom">
         <p>© 2025 Designed by Rubens Marcolino.</p>
         <div className="payment-icons">
-          <img src="images/visa.svg" alt="Visa" />
-          <img src="images/mastercard.svg" alt="Mastercard" />
-          <img src="images/paypal.svg" alt="PayPal" />
-          <img src="images/skrill.svg" alt="Skrill" />
-          <img src="images/payoneer.svg" alt="Payoneer" />
-          <img src="images/gpay.svg" alt="Google Pay" />
+    <img src={`${process.env.PUBLIC_URL}/images/visa.svg`} alt="Visa" />
+    <img src={`${process.env.PUBLIC_URL}/images/mastercard.svg`} alt="Mastercard" />
+    <img src={`${process.env.PUBLIC_URL}/images/paypal.svg`} alt="PayPal" />
+    <img src={`${process.env.PUBLIC_URL}/images/skrill.svg`} alt="Skrill" />
+    <img src={`${process.env.PUBLIC_URL}/images/payoneer.svg`} alt="Payoneer" />
+    <img src={`${process.env.PUBLIC_URL}/images/gpay.svg`} alt="Google Pay" />
         </div>
         <p><a href="/terms-and-conditions">Terms & Conditions</a> | <a href="https://www.ensign.com">Privacy Policy</a></p>
       </section>

@@ -114,10 +114,10 @@ const Home = () => {
                 <img src="/images/c_plus.png" alt="C++" />
               </div>
               <div className="skills-row-2">
-                <img src="./images/jsx.svg" alt="JSX" />
-                <img src="./images/php.svg" alt="PHP" />
-                <img src="./images/css.svg" alt="CSS" />
-                <img src="/images/react.svg" alt="React" />
+                <img src="/images/jsx.svg" alt="JSX" />
+                <img src="/images/php.svg" alt="PHP" />
+                <img src="/images/css.svg" alt="CSS" />
+                <img src="public/images/react.svg" alt="React" />
                 <img src="/images/vue.svg" alt="Vue" />
               </div>
             </div>
